@@ -1414,7 +1414,7 @@ Remember:
 ```
 
 ---
-# 47. Final Cheat Sheet
+# 45. Final Cheat Sheet
 
 ```javascript
 // String → Number
