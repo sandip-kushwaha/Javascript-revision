@@ -1,0 +1,1631 @@
+# JavaScript Operators
+
+Operators are special symbols or keywords used to perform operations on values and variables.
+
+For example:
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+```
+
+Output:
+
+```text
+15
+```
+
+Here:
+
+```text
++ → operator
+a → operand
+b → operand
+```
+
+---
+
+# 1. Types of Operators
+
+JavaScript provides many types of operators:
+
+```text
+1. Arithmetic Operators
+2. Assignment Operators
+3. Comparison Operators
+4. Logical Operators
+5. Increment / Decrement Operators
+6. Unary Operators
+7. Ternary Operator
+8. Nullish Coalescing Operator
+9. Optional Chaining Operator
+10. Bitwise Operators
+11. Relational Operators
+12. Exponentiation Operator
+```
+
+---
+
+# 2. Arithmetic Operators
+
+Arithmetic operators are used for mathematical calculations.
+
+| Operator | Name           | Example  |
+| -------- | -------------- | -------- |
+| `+`      | Addition       | `10 + 5` |
+| `-`      | Subtraction    | `10 - 5` |
+| `*`      | Multiplication | `10 * 5` |
+| `/`      | Division       | `10 / 5` |
+| `%`      | Remainder      | `10 % 3` |
+| `**`     | Exponentiation | `2 ** 3` |
+
+---
+
+## Addition `+`
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+```
+
+Output:
+
+```text
+15
+```
+
+The `+` operator can also concatenate strings:
+
+```javascript
+let firstName = "Sandip";
+let lastName = "Kushwaha";
+
+console.log(firstName + " " + lastName);
+```
+
+Output:
+
+```text
+Sandip Kushwaha
+```
+
+---
+
+# 3. Subtraction `-`
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a - b);
+```
+
+Output:
+
+```text
+5
+```
+
+---
+
+# 4. Multiplication `*`
+
+```javascript
+let price = 100;
+let quantity = 3;
+
+console.log(price * quantity);
+```
+
+Output:
+
+```text
+300
+```
+
+---
+
+# 5. Division `/`
+
+```javascript
+let total = 100;
+let people = 4;
+
+console.log(total / people);
+```
+
+Output:
+
+```text
+25
+```
+
+---
+
+# 6. Remainder `%`
+
+The `%` operator returns the remainder after division.
+
+```javascript
+console.log(10 % 3);
+```
+
+Output:
+
+```text
+1
+```
+
+Because:
+
+```text
+10 ÷ 3 = 3 remainder 1
+```
+
+---
+
+## Checking Even and Odd Numbers
+
+```javascript
+let number = 10;
+
+if (number % 2 === 0) {
+    console.log("Even");
+} else {
+    console.log("Odd");
+}
+```
+
+Output:
+
+```text
+Even
+```
+
+---
+
+# 7. Exponentiation `**`
+
+The `**` operator calculates powers.
+
+```javascript
+console.log(2 ** 3);
+```
+
+Output:
+
+```text
+8
+```
+
+Because:
+
+```text
+2 × 2 × 2 = 8
+```
+
+Another example:
+
+```javascript
+console.log(5 ** 2);
+```
+
+Output:
+
+```text
+25
+```
+
+---
+
+# 8. Arithmetic Operator Example
+
+```javascript
+let a = 20;
+let b = 6;
+
+console.log(a + b);  // 26
+console.log(a - b);  // 14
+console.log(a * b);  // 120
+console.log(a / b);  // 3.333...
+console.log(a % b);  // 2
+console.log(a ** 2); // 400
+```
+
+---
+
+# 9. Assignment Operators
+
+Assignment operators are used to assign or update values.
+
+Basic assignment:
+
+```javascript
+let score = 10;
+```
+
+Here:
+
+```text
+= → assignment operator
+```
+
+---
+
+## Addition Assignment `+=`
+
+```javascript
+let score = 10;
+
+score += 5;
+
+console.log(score);
+```
+
+Output:
+
+```text
+15
+```
+
+This is equivalent to:
+
+```javascript
+score = score + 5;
+```
+
+---
+
+## Subtraction Assignment `-=`
+
+```javascript
+let score = 10;
+
+score -= 3;
+
+console.log(score);
+```
+
+Output:
+
+```text
+7
+```
+
+Equivalent to:
+
+```javascript
+score = score - 3;
+```
+
+---
+
+## Multiplication Assignment `*=`
+
+```javascript
+let price = 100;
+
+price *= 2;
+
+console.log(price);
+```
+
+Output:
+
+```text
+200
+```
+
+Equivalent to:
+
+```javascript
+price = price * 2;
+```
+
+---
+
+## Division Assignment `/=`
+
+```javascript
+let price = 100;
+
+price /= 4;
+
+console.log(price);
+```
+
+Output:
+
+```text
+25
+```
+
+---
+
+## Remainder Assignment `%=`
+
+```javascript
+let number = 10;
+
+number %= 3;
+
+console.log(number);
+```
+
+Output:
+
+```text
+1
+```
+
+---
+
+## Exponentiation Assignment `**=`
+
+```javascript
+let number = 2;
+
+number **= 3;
+
+console.log(number);
+```
+
+Output:
+
+```text
+8
+```
+
+---
+
+# 10. Assignment Operator Summary
+
+| Operator | Example   | Equivalent   |
+| -------- | --------- | ------------ |
+| `=`      | `x = 5`   | Assign       |
+| `+=`     | `x += 5`  | `x = x + 5`  |
+| `-=`     | `x -= 5`  | `x = x - 5`  |
+| `*=`     | `x *= 5`  | `x = x * 5`  |
+| `/=`     | `x /= 5`  | `x = x / 5`  |
+| `%=`     | `x %= 5`  | `x = x % 5`  |
+| `**=`    | `x **= 5` | `x = x ** 5` |
+
+---
+
+# 11. Comparison Operators
+
+Comparison operators compare two values.
+
+They return a Boolean:
+
+```text
+true
+false
+```
+
+Common comparison operators:
+
+| Operator | Meaning                         |
+| -------- | ------------------------------- |
+| `==`     | Equal after type conversion     |
+| `===`    | Strictly equal                  |
+| `!=`     | Not equal after type conversion |
+| `!==`    | Strictly not equal              |
+| `>`      | Greater than                    |
+| `<`      | Less than                       |
+| `>=`     | Greater than or equal           |
+| `<=`     | Less than or equal              |
+
+---
+
+# 12. Equal `==`
+
+The `==` operator compares values after allowing type conversion.
+
+```javascript
+console.log(5 == "5");
+```
+
+Output:
+
+```text
+true
+```
+
+The number `5` and string `"5"` are converted for the comparison.
+
+---
+
+# 13. Strict Equal `===`
+
+The `===` operator checks both value and type.
+
+```javascript
+console.log(5 === "5");
+```
+
+Output:
+
+```text
+false
+```
+
+Because:
+
+```text
+5   → number
+"5" → string
+```
+
+Example:
+
+```javascript
+console.log(5 === 5);
+```
+
+Output:
+
+```text
+true
+```
+
+For modern JavaScript, `===` is generally preferred when you want predictable equality checks.
+
+---
+
+# 14. Not Equal `!=`
+
+```javascript
+console.log(5 != 10);
+```
+
+Output:
+
+```text
+true
+```
+
+Because `5` is not equal to `10`.
+
+---
+
+# 15. Strict Not Equal `!==`
+
+```javascript
+console.log(5 !== "5");
+```
+
+Output:
+
+```text
+true
+```
+
+The values have different types.
+
+---
+
+# 16. Greater Than `>`
+
+```javascript
+console.log(10 > 5);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+# 17. Less Than `<`
+
+```javascript
+console.log(10 < 5);
+```
+
+Output:
+
+```text
+false
+```
+
+---
+
+# 18. Greater Than or Equal `>=`
+
+```javascript
+console.log(10 >= 10);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+# 19. Less Than or Equal `<=`
+
+```javascript
+console.log(10 <= 10);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+# 20. Comparison Example
+
+```javascript
+let age = 22;
+
+console.log(age > 18);
+console.log(age < 18);
+console.log(age === 22);
+console.log(age !== 30);
+```
+
+Output:
+
+```text
+true
+false
+true
+true
+```
+
+---
+
+# 21. Logical Operators
+
+Logical operators are commonly used with conditions.
+
+| Operator | Name |   |    |
+| -------- | ---- | - | -- |
+| `&&`     | AND  |   |    |
+| `        |      | ` | OR |
+| `!`      | NOT  |   |    |
+
+---
+
+# 22. Logical AND `&&`
+
+`&&` returns a truthy/falsy operand based on whether both sides are truthy.
+
+In conditional expressions, it behaves like logical AND.
+
+```javascript
+let age = 22;
+let hasID = true;
+
+console.log(age >= 18 && hasID);
+```
+
+Output:
+
+```text
+true
+```
+
+Both conditions are true.
+
+---
+
+## AND Truth Table
+
+| A     | B     | A && B |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | false  |
+| false | true  | false  |
+| false | false | false  |
+
+---
+
+# 23. Logical OR `||`
+
+`||` returns the first truthy operand, or the last operand if none is truthy.
+
+Example:
+
+```javascript
+let isAdmin = false;
+let isManager = true;
+
+console.log(isAdmin || isManager);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+## OR Truth Table
+
+| A     | B     | A || B |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | true   |
+| false | true  | true   |
+| false | false | false  |
+
+---
+
+## `||` Does Not Always Return Boolean
+
+This is important:
+
+```javascript
+console.log("Hello" || "World");
+```
+
+Output:
+
+```text
+Hello
+```
+
+And:
+
+```javascript
+console.log("" || "World");
+```
+
+Output:
+
+```text
+World
+```
+
+So `||` returns an operand, not necessarily `true` or `false`.
+
+---
+
+# 24. Logical NOT `!`
+
+`!` reverses the truthiness of a value.
+
+```javascript
+console.log(!true);
+```
+
+Output:
+
+```text
+false
+```
+
+Example:
+
+```javascript
+console.log(!false);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+# 25. Double NOT `!!`
+
+Using `!!` is a common way to convert a value to a Boolean.
+
+```javascript
+console.log(!!"Hello");
+```
+
+Output:
+
+```text
+true
+```
+
+```javascript
+console.log(!!0);
+```
+
+Output:
+
+```text
+false
+```
+
+---
+
+# 26. Increment Operator `++`
+
+The `++` operator increases a number by `1`.
+
+```javascript
+let count = 5;
+
+count++;
+
+console.log(count);
+```
+
+Output:
+
+```text
+6
+```
+
+Equivalent to:
+
+```javascript
+count = count + 1;
+```
+
+---
+
+# 27. Prefix Increment
+
+When `++` appears before the variable:
+
+```javascript
+let count = 5;
+
+console.log(++count);
+```
+
+Output:
+
+```text
+6
+```
+
+The value is incremented first, then returned.
+
+---
+
+# 28. Postfix Increment
+
+When `++` appears after the variable:
+
+```javascript
+let count = 5;
+
+console.log(count++);
+```
+
+Output:
+
+```text
+5
+```
+
+But after the statement:
+
+```javascript
+console.log(count);
+```
+
+Output:
+
+```text
+6
+```
+
+### Remember
+
+```text
+++x → increment first, then return
+x++ → return first, then increment
+```
+
+---
+
+# 29. Decrement Operator `--`
+
+The `--` operator decreases a value by `1`.
+
+```javascript
+let count = 5;
+
+count--;
+
+console.log(count);
+```
+
+Output:
+
+```text
+4
+```
+
+---
+
+# 30. Prefix vs Postfix Decrement
+
+Prefix:
+
+```javascript
+let count = 5;
+
+console.log(--count);
+```
+
+Output:
+
+```text
+4
+```
+
+Postfix:
+
+```javascript
+let count = 5;
+
+console.log(count--);
+```
+
+Output:
+
+```text
+5
+```
+
+Afterward:
+
+```javascript
+console.log(count);
+```
+
+Output:
+
+```text
+4
+```
+
+---
+
+# 31. Ternary Operator
+
+The ternary operator is a short way to write a simple `if...else`.
+
+Syntax:
+
+```javascript
+condition ? valueIfTrue : valueIfFalse
+```
+
+Example:
+
+```javascript
+let age = 22;
+
+let result = age >= 18 ? "Adult" : "Minor";
+
+console.log(result);
+```
+
+Output:
+
+```text
+Adult
+```
+
+Equivalent `if...else`:
+
+```javascript
+let age = 22;
+let result;
+
+if (age >= 18) {
+    result = "Adult";
+} else {
+    result = "Minor";
+}
+```
+
+Use the ternary operator for simple conditions. Avoid deeply nested ternaries because they can reduce readability.
+
+---
+
+# 32. Nested Ternary
+
+Technically possible:
+
+```javascript
+let age = 22;
+
+let category =
+    age < 13
+        ? "Child"
+        : age < 18
+        ? "Teenager"
+        : "Adult";
+```
+
+But too many nested ternaries can make code difficult to read.
+
+For complex conditions, prefer `if...else` or another clearer structure.
+
+---
+
+# 33. Nullish Coalescing Operator `??`
+
+The `??` operator returns the right-hand value only when the left-hand value is:
+
+```text
+null
+```
+
+or:
+
+```text
+undefined
+```
+
+Example:
+
+```javascript
+let username = null;
+
+let result = username ?? "Guest";
+
+console.log(result);
+```
+
+Output:
+
+```text
+Guest
+```
+
+---
+
+# 34. `??` vs `||`
+
+This is an important difference.
+
+With `||`:
+
+```javascript
+let count = 0;
+
+console.log(count || 10);
+```
+
+Output:
+
+```text
+10
+```
+
+Because `0` is falsy.
+
+With `??`:
+
+```javascript
+let count = 0;
+
+console.log(count ?? 10);
+```
+
+Output:
+
+```text
+0
+```
+
+Because `0` is not `null` or `undefined`.
+
+---
+
+## Comparison
+
+| Value | `value || 10` | `value ?? 10` |
+|---|---:|---:|
+| `0` | `10` | `0` |
+| `""` | `10` | `""` |
+| `false` | `10` | `false` |
+| `null` | `10` | `10` |
+| `undefined` | `10` | `10` |
+
+Use `??` when you specifically want a fallback only for missing values (`null`/`undefined`).
+
+---
+
+# 35. Optional Chaining `?.`
+
+Optional chaining allows you to safely access properties or call functions when a value might be `null` or `undefined`.
+
+Example:
+
+```javascript
+const user = {
+    name: "Sandip"
+};
+
+console.log(user.address?.city);
+```
+
+Instead of throwing an error, the result is:
+
+```text
+undefined
+```
+
+Without optional chaining:
+
+```javascript
+console.log(user.address.city);
+```
+
+This would throw an error because `user.address` is `undefined`.
+
+---
+
+# 36. Optional Chaining with Function Calls
+
+```javascript
+const user = {
+    greet() {
+        console.log("Hello");
+    }
+};
+
+user.greet?.();
+```
+
+If `greet` does not exist, the optional call avoids a `TypeError`.
+
+---
+
+# 37. Unary Operators
+
+A unary operator works with one operand.
+
+Examples:
+
+```javascript
+let number = 10;
+
+console.log(-number);
+```
+
+Output:
+
+```text
+-10
+```
+
+Another example:
+
+```javascript
+console.log(+ "10");
+```
+
+Output:
+
+```text
+10
+```
+
+The unary `+` can convert a value to a number.
+
+---
+
+# 38. `typeof` Operator
+
+`typeof` returns the type of a value.
+
+```javascript
+console.log(typeof "Hello");
+```
+
+Output:
+
+```text
+string
+```
+
+Example:
+
+```javascript
+console.log(typeof 100);
+console.log(typeof true);
+console.log(typeof undefined);
+```
+
+Output:
+
+```text
+number
+boolean
+undefined
+```
+
+---
+
+# 39. `delete` Operator
+
+The `delete` operator can remove a property from an object.
+
+```javascript
+const user = {
+    name: "Sandip",
+    age: 22
+};
+
+delete user.age;
+
+console.log(user);
+```
+
+Result:
+
+```javascript
+{
+    name: "Sandip"
+}
+```
+
+It is generally used with object properties, not as a general way to remove variables.
+
+---
+
+# 40. `in` Operator
+
+The `in` operator checks whether a property exists in an object or its prototype chain.
+
+```javascript
+const user = {
+    name: "Sandip",
+    age: 22
+};
+
+console.log("name" in user);
+```
+
+Output:
+
+```text
+true
+```
+
+Example:
+
+```javascript
+console.log("email" in user);
+```
+
+Output:
+
+```text
+false
+```
+
+---
+
+# 41. `instanceof` Operator
+
+`instanceof` checks whether an object is an instance of a particular constructor or class.
+
+```javascript
+const numbers = [1, 2, 3];
+
+console.log(numbers instanceof Array);
+```
+
+Output:
+
+```text
+true
+```
+
+Example:
+
+```javascript
+const user = {};
+
+console.log(user instanceof Object);
+```
+
+Output:
+
+```text
+true
+```
+
+---
+
+# 42. Bitwise Operators
+
+Bitwise operators work with the bit-level representation of numbers.
+
+Common operators:
+
+| Operator | Name                         |    |
+| -------- | ---------------------------- | -- |
+| `&`      | AND                          |    |
+| `        | `                            | OR |
+| `^`      | XOR                          |    |
+| `~`      | NOT                          |    |
+| `<<`     | Left shift                   |    |
+| `>>`     | Sign-propagating right shift |    |
+| `>>>`    | Zero-fill right shift        |    |
+
+Example:
+
+```javascript
+console.log(5 & 1);
+```
+
+Output:
+
+```text
+1
+```
+
+Binary representation:
+
+```text
+5 = 101
+1 = 001
+
+101
+001
+---
+001 = 1
+```
+
+Bitwise operators are more common in specialized programming such as low-level operations, flags, binary manipulation, and some performance-sensitive algorithms.
+
+---
+
+# 43. Operator Precedence
+
+When an expression contains multiple operators, JavaScript follows operator precedence rules.
+
+Example:
+
+```javascript
+let result = 10 + 5 * 2;
+
+console.log(result);
+```
+
+Output:
+
+```text
+20
+```
+
+Multiplication happens before addition:
+
+```text
+5 * 2 = 10
+10 + 10 = 20
+```
+
+---
+
+# 44. Using Parentheses
+
+Parentheses can change the order of evaluation.
+
+```javascript
+let result = (10 + 5) * 2;
+
+console.log(result);
+```
+
+Output:
+
+```text
+30
+```
+
+Without parentheses:
+
+```javascript
+10 + 5 * 2
+```
+
+Result:
+
+```text
+20
+```
+
+With parentheses:
+
+```javascript
+(10 + 5) * 2
+```
+
+Result:
+
+```text
+30
+```
+
+### Best practice
+
+Use parentheses when they make the intended calculation clearer.
+
+---
+
+# 45. Operator Precedence Example
+
+```javascript
+let result = 10 + 20 * 2;
+
+console.log(result);
+```
+
+Output:
+
+```text
+50
+```
+
+Because:
+
+```text
+20 * 2 = 40
+10 + 40 = 50
+```
+
+---
+
+# 46. String Concatenation
+
+The `+` operator can join strings.
+
+```javascript
+const firstName = "Sandip";
+const lastName = "Kushwaha";
+
+const fullName = firstName + " " + lastName;
+
+console.log(fullName);
+```
+
+Output:
+
+```text
+Sandip Kushwaha
+```
+
+---
+
+# 47. Addition vs String Concatenation
+
+Be careful when combining strings and numbers.
+
+```javascript
+console.log(10 + 5);
+```
+
+Output:
+
+```text
+15
+```
+
+But:
+
+```javascript
+console.log("10" + 5);
+```
+
+Output:
+
+```text
+105
+```
+
+The number is converted to a string and concatenated.
+
+---
+
+# 48. Subtraction with Strings
+
+Some arithmetic operators convert strings to numbers.
+
+```javascript
+console.log("10" - 5);
+```
+
+Output:
+
+```text
+5
+```
+
+Similarly:
+
+```javascript
+console.log("10" * 2);
+```
+
+Output:
+
+```text
+20
+```
+
+This is one reason explicit type conversion is often clearer.
+
+---
+
+# 49. Comparison Example
+
+```javascript
+let age = 22;
+
+if (age >= 18) {
+    console.log("Adult");
+}
+```
+
+Here:
+
+```text
+>= → comparison operator
+```
+
+The result of:
+
+```javascript
+age >= 18
+```
+
+is:
+
+```text
+true
+```
+
+---
+
+# 50. Logical Operators in Real Applications
+
+Example from an authentication system:
+
+```javascript
+const isLoggedIn = true;
+const isAdmin = true;
+
+if (isLoggedIn && isAdmin) {
+    console.log("Access granted");
+}
+```
+
+Output:
+
+```text
+Access granted
+```
+
+Another example:
+
+```javascript
+const role = "admin";
+
+if (role === "admin" || role === "manager") {
+    console.log("Can access dashboard");
+}
+```
+
+---
+
+# 51. Operator Example in a Hotel System
+
+```javascript
+const capacity = 6;
+const customerCount = 4;
+
+const availableSeats = capacity - customerCount;
+
+console.log(availableSeats);
+```
+
+Output:
+
+```text
+2
+```
+
+Check availability:
+
+```javascript
+if (customerCount < capacity) {
+    console.log("Table available");
+} else {
+    console.log("Table full");
+}
+```
+
+---
+
+# 52. Operator Cheat Sheet
+
+```text
+Arithmetic
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+%   Remainder
+**  Exponentiation
+
+Assignment
+=   Assignment
++=  Add and assign
+-=  Subtract and assign
+*=  Multiply and assign
+/=  Divide and assign
+%=  Remainder and assign
+**= Exponentiate and assign
+
+Comparison
+==  Loose equality
+=== Strict equality
+!=  Loose inequality
+!== Strict inequality
+>   Greater than
+<   Less than
+>=  Greater than or equal
+<=  Less than or equal
+
+Logical
+&&  AND
+||  OR
+!   NOT
+
+Increment / Decrement
+++  Increment
+--  Decrement
+
+Other
+?:  Ternary
+??  Nullish coalescing
+?.  Optional chaining
+typeof
+delete
+in
+instanceof
+```
+
+---
+
+# 55. Key Takeaways
+
+* Operators perform operations on values.
+* Arithmetic operators perform mathematical calculations.
+* Assignment operators update variables.
+* Comparison operators return Boolean results.
+* `===` checks both value and type.
+* `==` allows type conversion.
+* `&&`, `||`, and `!` are logical operators.
+* `++` increases a value by `1`.
+* `--` decreases a value by `1`.
+* The ternary operator is useful for simple conditions.
+* `??` provides a fallback for `null` or `undefined`.
+* `?.` safely accesses potentially missing properties or methods.
+* `typeof` checks the type of a value.
+* `instanceof` checks object relationships with constructors/classes.
+* `delete` removes object properties.
+* Operator precedence determines the order in which expressions are evaluated.
+* Parentheses can make the intended order explicit.
