@@ -1610,7 +1610,7 @@ instanceof
 
 ---
 
-# 55. Key Takeaways
+# 53. Key Takeaways
 
 * Operators perform operations on values.
 * Arithmetic operators perform mathematical calculations.
