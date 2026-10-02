@@ -1296,7 +1296,7 @@ This makes a large application easier to manage.
 
 ---
 
-# 44. Quick Revision
+# 43. Quick Revision
 
 | Concept                       | Example                                     |
 | ----------------------------- | ------------------------------------------- |
@@ -1315,7 +1315,7 @@ This makes a large application easier to manage.
 
 ---
 
-# 45. Key Takeaways
+# 44. Key Takeaways
 
 * A **function** is a reusable block of code.
 * Define a function using the `function` keyword.
