@@ -951,7 +951,7 @@ do {
 } while (condition)
 ```
 
-# 34. Quick Revision
+# 32. Quick Revision
 
 ### Basic Syntax
 
@@ -1007,7 +1007,7 @@ do...while:
 
 ---
 
-# 35. Key Takeaways
+# 33. Key Takeaways
 
 * `do...while` executes the body **at least once**.
 * The condition is checked **after** execution.
