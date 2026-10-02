@@ -1296,56 +1296,6 @@ This makes a large application easier to manage.
 
 ---
 
-# 43. Function Best Practices
-
-### 1. Use meaningful names
-
-```javascript
-function calculateTotal() {}
-```
-
-is better than:
-
-```javascript
-function calc() {}
-```
-
-### 2. Keep functions focused
-
-A function should preferably have one clear responsibility.
-
-### 3. Use parameters instead of hardcoding values
-
-Avoid:
-
-```javascript
-function calculate() {
-    return 500 * 2;
-}
-```
-
-Prefer:
-
-```javascript
-function calculate(price, quantity) {
-    return price * quantity;
-}
-```
-
-### 4. Return values when the result needs to be reused
-
-```javascript
-function add(a, b) {
-    return a + b;
-}
-```
-
-### 5. Avoid unnecessarily large functions
-
-If a function becomes too large, divide it into smaller functions.
-
----
-
 # 44. Quick Revision
 
 | Concept                       | Example                                     |
