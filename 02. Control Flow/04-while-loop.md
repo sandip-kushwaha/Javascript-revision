@@ -1289,7 +1289,7 @@ Check again
 
 ---
 
-# 40. Key Takeaways
+# 37. Key Takeaways
 
 * `while` repeats code while a condition is `true`.
 * The condition is checked **before** each iteration.
