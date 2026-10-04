@@ -64,7 +64,7 @@ JavaScript
 │
 ├── Functional Programming
 │
-├── Performance
+└── Performance
 
 ```
 
@@ -265,7 +265,7 @@ JavaScript/
 │   ├── 04-Immutability.md
 │   └── 05-Function-Composition.md
 │
-├── 23-Performance/
+└── 23-Performance/
     ├── 01-Memory-Management.md
     ├── 02-Garbage-Collection.md
     ├── 03-Debouncing.md
